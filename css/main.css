@@ -1,0 +1,530 @@
+
+
+/*start global Roules */
+
+*{
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box;
+     box-sizing: border-box;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+
+  }
+
+/*start global Roules */
+
+/* start Header  */
+
+.header {
+    background: url('../images/header.jpg') no-repeat top center;
+    -webkit-background-size: cover;
+    -moz-backgound-size: cover;        /*3shan temla elshasha */
+    -webkit-background-size: cover;
+     background-size: cover;
+     min-height: 500px;
+     position: relative;  /*3shan el overlay ely goh hykon fe elawd3 elmotlk 3shan khater yemla shashet elheder kamlh*/
+}
+
+.header .overlay {
+    position: absolute ;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    color: #FFF;
+    background-color: rgba(0, 168, 225, .5)
+}
+.header .overlay h1 {
+    font-size: 60px;
+    margin-top:100px
+}
+
+.header .overlay .plan {
+    border: 4px solid #FFF;
+    font-size: 24px;
+    width: 48%;   /*3shan yakhoud nos elbox eli hoa feh we 48 3shan 7aseb m3ah elmargin*/
+    padding: 20px;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+
+.header .overlay .order {
+    border: 4px solid #FFF;
+    font-size: 24px;
+    padding: 20px;
+    margin: 30px 1% 0;
+   
+}
+
+
+@media (max-width:767px){
+    h1 {
+        margin-top: 40px !important;
+    }
+    .header .overlay .plan{
+        float: none;
+        margin-bottom: 20px;
+        margin:0 auto 20px;
+        font-size: 22px;
+    }
+}
+
+@media (max-width:420px){   /*Custom midia Not found in bootsterap*/
+    h1 {
+        margin-top: 20px  !important;
+        font-size: 50px   !important;
+    }
+    .header .overlay .plan{
+        float: none;
+        margin-bottom: 20px;
+        margin:0 auto 20px;
+        font-size: 22px;
+    }
+}
+
+/* End Header  */
+
+/*Start Features */
+
+.features {
+    padding: 30px 0
+}
+
+.features .h1 {
+    font-size: 50px;
+    color: #555;
+}
+
+.features .feat {
+
+    
+    color: #555;
+    padding: 0 20px 0 0;
+}
+.features .feat p {
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.features .feat h2 {
+    margin: 10px 0 8px;
+}
+@media (max-width: 676px){
+
+   .features .feat{
+       text-align: center;
+   }
+
+}
+@media (min-width: 768px ) {
+
+    .features .feat:first-of-type {
+        width: 100%;
+      }
+    .features .feat:not(:first-of-type) {
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px )  {  /*kdh fi elshat elsmol el hi as3'r mn di hicon elwidth 100% la2n ai shash ma7didlhash width btakhod el width kaml*/
+    .features .feat {
+
+        width: 33.33333% !important; 
+    }
+}
+
+/*End Features */
+
+/* start About-us */
+
+.about-us {
+    background-color: #ececee;
+    padding: 30px 0;
+}
+
+.about-us .h1 { 
+    font-size: 50px;
+    color: #848488;
+}
+.about-us .responsive-pargraph {
+    color: #848488;
+    font-size: 20px;
+}
+
+
+/* End About-us */
+
+/* Start our-works */
+@media (max-width: 767px ) {
+  
+    .our-works .image {
+        width: 100% !important;
+     }
+}
+@media (min-width: 768px ) {
+  
+    .our-works .image {
+        width: 50%
+     }
+}
+@media (min-width: 992px ) {
+  
+    .our-works .image {
+        width: 33.33333%
+     }
+}
+@media (min-width: 1200px ) {
+  
+    .our-works .image {
+        width: 25%
+     }
+}    
+ 
+/* End our-works */
+
+/* Start pricing-table */
+
+ .pricing-table{
+     background-color:#444;
+     color: #FFF;
+     padding: 50px 0;
+ }
+
+ .pricing-table .h1 {
+     margin: 0 0 40px;
+     font-size: 50px;
+ }
+ .pricing-table .pricing-plan {
+     border: 3px solid #FFF;
+     padding: 20px 0 ;
+     position: relative; /*3shan 2kder at7kem feh bl position */
+ }
+
+ .pricing-table .pricing-plan h3 {
+     margin: 0 0 10px;
+     font-size: 26px;
+     
+ }
+ .pricing-table .pricing-plan .pricing {
+     display: inline-block;
+     margin: 0 0 10px;
+     font-size: 22px;
+     color: #bfbfbf;
+ }
+ .pricing-table .pricing-plan ul {
+     line-height: 2;
+     font-size: 18px;
+ }
+ @media (max-width: 768px ) {
+    .pricing-table .pricing-plan{
+        width:100%;
+        margin-bottom:20px ; 
+    }
+ }
+ @media (min-width: 768px ) {
+    .pricing-table .pricing-plan{
+        width:100%;
+        margin-bottom:20px ; /*3shan elkhasi matmshish m3ia l7d akhr shash ybka lazm a7ded el max width enma el width ma mshesh li akhr shasha 3san 
+                              ana m7dido fi el shashat elkbira  ao a3ml fi el shashat el kbira margin-bottom: 0 ;  */
+    }
+ }
+
+ @media (min-width: 992px ) {
+    .pricing-table .pricing-plan:not(.ultimate) { /*e3ml lkolh margin ma3da elakher*/
+        margin-right: 1%
+    }
+    .pricing-table .pricing-plan {
+        width:32.6666666% ;   /*3shan ykon magmo3hm m3 el margin 100% */
+        margin-bottom: 0 ; 
+    }
+    .pricing-table .pricing-plan.plus { /*lma tkon eldot laz2a fe eli 2blha m3naha en el3onsor goh elclassin dol gnb ba3d*/
+        left: 33.6666% ; /*3shan n3mloh ezaha we yroh makan el premium */
+    }
+    .pricing-table .pricing-plan.premium {
+        right: 33.6666% ; /*3shan n3mloh s7b we yroh makan el plus */
+    }
+ }
+/* End pricing-table */
+
+/* Start What They Say */
+.thay-say {
+    padding: 50px 0;
+}
+.thay-say .h1 {
+    font-size:50px;
+    margin: 0 0 20px ;
+    color: #555
+}
+.thay-say .person-say {
+    background-color: #EEE;
+    padding: 20px;
+    margin: 0 0 20px;
+    border: 1px solid #DDD;
+    border-radius: 10px;
+    
+}
+.thay-say .person-say .avatar {
+    width: 120px;
+    margin-right: 20px;
+    
+
+}
+
+.thay-say .person-say h3 {
+    margin: 5px 0 10px ;
+}
+.thay-say .person-say p {
+    display: flex;
+    margin: 0;
+    line-height: 1.2;
+    /* margin-left: 20px; ha a3mlo ll image fi avatar bs ha3mlio raight bdl ma a3mlo left ll <p> wel <h3>  */
+    width: calc(100% - 140px) !important; /*this fanction in css its very beatful you tell them that the width for paragraph is 100% minus 100px for picture and margin-left is 20px */
+}
+@media (max-width: 767px) {
+    .thay-say .person-say .avatar {
+        float: none ;
+        margin: auto
+    }
+
+    .thay-say .person-say h3 {
+        float:none;
+        text-align : center
+    }
+    .thay-say .person-say p {
+        float: left;
+        width: 100% !important;
+        text-align: justify;
+    }
+}
+@media (min-width: 768px ) {
+    .thay-say .person-say:first-of-type {
+        width:100%;
+     
+    }
+    .thay-say .person-say:not(:first-of-type){ /*matma 3mlt elwidth fe elshsha els3'ira ybka haymshi 3la kl el fo2o ha ytabk 3lih eltansik dh */
+        width:49%;
+    }
+    .thay-say .person-say:last-of-type {
+        margin-left: 2%;
+    }
+}
+ 
+@media (min-width: 768px )  and (max-width: 991px) {
+    .thay-say .person-say:not(:first-of-type) .avatar {
+        float: none ;
+        margin: auto
+    }
+    .thay-say .person-say:not(:first-of-type) h3 {
+        float:none;
+        text-align : center
+    }
+    .thay-say .person-say:not(:first-of-type) p {
+        float: left;
+        width: 100% !important;
+        text-align: justify;
+    }
+}
+@media (min-width: 992px ) {
+    .thay-say .person-say:first-of-type {
+        width:80%;
+        margin-left: 10%;
+    }
+    /* .thay-say .person-say:not(:first-of-type){
+        width:50%
+  */
+}
+
+/* End What They Say */
+
+/* Start Information */
+.information {
+    background-color: #ececee;
+    padding: 30px 0;
+    font-size: 18px;
+}
+
+.information .h1 { 
+    font-size: 50px;
+    color: #848488;
+}
+.information .info-list li {
+    display: inline-block;
+    background-color: #DDD;
+    padding: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.information .info-list li.selected {
+    background-color: #FFF;
+    color: #22a9bd;
+}
+
+.information .info-content {
+    margin-bottom: 30px;
+}
+.information .info-content > div { /* ya3ni awl div goha a*/
+    padding: 10px;
+    background-color:#FFF;
+    line-height: 1.8;
+}
+
+.information .info-content > div:not(:first-of-type) {
+    display: none;
+}
+
+@media (max-width: 676px ) {
+
+    .information .info-list li{
+        display: block;
+    }
+}
+
+
+/* End Information */
+
+
+/* Start Footer */
+
+.footer {
+    background-color: #333 !important;
+    color:#EEE;
+    height: 58px
+}
+.footer .copyright,
+.footer .design {
+    padding: 20px;
+}
+@media (max-width: 768px ) {
+    .footer {
+        height: 116px
+    }
+    .footer .copyright,
+      .footer .design{
+          width: 100%;
+      }
+}
+@media (min-width: 768px ) {
+    .footer .copyright,
+      .footer .design{
+          width: 50%;
+          
+      }
+}
+
+/* End Footer   */
+
+@media (max-width: 676px ) {  /* Mobile & Tablet Rules*/
+
+   .visible-xs {
+       display: block !important;
+   }
+   .hidden-xs {
+       display: none !important;  /*elhidden 3ks el visible elvisble lazim akhfi el3onsor 3 shan azhro fi mkan mo3in enma alhidden 3kso el3onsor kdh kdh mogod fi kol elmdiat w ent 3oz tkhfih fi medih mo3ina*/
+   }
+   .responsive-pargraph{
+       text-align: center;
+       font-size: 16px !important;
+   }
+}
+
+@media (min-width: 768px ) and (max-width: 991px) {  /* small screen Rules */
+    .container {
+        width: 750px;
+    }
+    .visible-sm {
+        display: block !important;
+    }
+    .hidden-sm {
+        display: none !important;
+    }
+}
+
+@media (min-width: 992px )  and (max-width: 1199px ) {  /* Medium screen Rules */
+    .container {
+        width: 970px;
+    }
+    .visible-md {
+        display: block !important;
+    }
+    .hidden-md {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1200px ) {  /* Large screen Rules */
+    .container {
+        width: 1170px;
+    }
+    .visible-lg {
+        display: block !important;
+    }
+    .hidden-lg {
+        display: none !important;
+    }
+}
+
+
+/* Start Framwork */
+
+.container {
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.clearfix {
+    clear:both
+}
+
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg {
+    display: none;
+}
+
+.float-left {
+
+    float: left;  /* dh 3shan lo 7olt elmok3 l3rbi a3'yer dy bs ela right */
+}
+
+.float-right {
+
+    float: right;
+}
+
+.h1 {     /*bn3ml class esmoh h1 3shan sf7tk ma yinf3sh ykon fiha 3noanin wkhdin h1 ma yinf3sh elktab ykon lih esmin */
+     font-size: 2em;
+}
+
+.responsive-pargraph{
+    line-height: 1.8;
+}
+
+.responsive-image {   /*elsora elmtgoba */
+    width: 100%;
+}
+.classic-list{
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ 
+.img-circle {
+    border-radius: 50%
+}
+
+.img-thumbnail {   /*sora mosghra*/
+    padding: 3px;
+    background-color: #FFF;
+    border: 1px solid #CCC;
+}
+/* End Framwork */
+
